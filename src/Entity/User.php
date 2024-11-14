@@ -28,4 +28,20 @@ class User
     )
     {}
 
+    public function getId(): ?int
+    {
+        return $this->id;
+    }
+
+    public function getFirstname(): string
+    {
+        return $this->firstname;
+    }
+
+    public function getLastname(): string
+    {
+        return $this->lastname;
+    }
+
+
 }

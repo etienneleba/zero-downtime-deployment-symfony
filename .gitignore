@@ -10,4 +10,4 @@
 ###< symfony/framework-bundle ###
 
 /.idea
-/docker/db/datat
+/docker/db/data

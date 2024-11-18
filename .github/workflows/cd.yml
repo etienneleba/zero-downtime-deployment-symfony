@@ -1,0 +1,16 @@
+name: CD
+
+on:
+  push:
+    branches:
+      - main
+  pull_request: ~
+  workflow_dispatch: ~
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.head_ref || github.run_id }}
+  cancel-in-progress: true
+
+jobs:
+  build-and-deploy:
+    name: Build and deploy

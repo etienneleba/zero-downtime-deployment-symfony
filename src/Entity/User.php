@@ -21,7 +21,7 @@ class User
      * @param string|null $lastname
      */
     public function __construct(
-        #[ORM\Column(length: 255)]
+        #[ORM\Column(length: 255, name: "first_name")]
         private string $firstname,
         #[ORM\Column(length: 255)]
         private string $lastname
